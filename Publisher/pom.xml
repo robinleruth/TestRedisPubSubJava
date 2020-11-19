@@ -12,9 +12,6 @@
     <name>Publisher</name>
     <description>Pub</description>
 
-    <properties>
-        <java.version>11</java.version>
-    </properties>
 
     <dependencies>
         <dependency>
