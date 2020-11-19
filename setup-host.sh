@@ -5,7 +5,7 @@
 
 # install system dependencies
 apt-get update -y
-apt-get install -y maven default-jdk
+apt-get install -y maven openjdk-14-jdk
 
 # install docker
 curl -fsSL https://get.docker.com/ | sh

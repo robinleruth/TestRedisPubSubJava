@@ -5,15 +5,13 @@ services:
     ports:
       - 6379:6379
   publisher:
-    build: ./redis-publisher
-    image: vinsdocker/redis-publisher
+    build: ./Publisher
     depends_on:
       - redis
     environment:
       - SPRING_REDIS_HOST=redis
   subscriber:
-    build: ./redis-subscriber
-    image: vinsdocker/redis-subscriber
+    build: ./Subscriber
     depends_on:
       - redis
     environment:
