@@ -6,6 +6,8 @@
 # install system dependencies
 apt-get update -y
 apt-get install -y maven openjdk-14-jdk
+apt-get install -y python3 python3-pip python3-venv build-essential pwgen
+pip3 install --upgrade pip wheel
 
 # install docker
 curl -fsSL https://get.docker.com/ | sh
